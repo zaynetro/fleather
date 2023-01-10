@@ -1270,7 +1270,7 @@ class _TransparentTapGestureRecognizer extends TapGestureRecognizer {
     // if (state == GestureRecognizerState.ready) {
     //   acceptGesture(pointer);
     // } else {
-    //   super.rejectGesture(pointer);
+      super.rejectGesture(pointer);
     // }
   }
 }
