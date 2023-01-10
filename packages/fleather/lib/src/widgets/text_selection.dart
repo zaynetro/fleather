@@ -1267,10 +1267,10 @@ class _TransparentTapGestureRecognizer extends TapGestureRecognizer {
     // the text field.
 
     // TODO: this is disabled so that we can handle taps on images and files.
-    // if (state == GestureRecognizerState.ready) {
-    //   acceptGesture(pointer);
-    // } else {
+    if (state == GestureRecognizerState.ready) {
+      acceptGesture(pointer);
+    } else {
       super.rejectGesture(pointer);
-    // }
+    }
   }
 }
