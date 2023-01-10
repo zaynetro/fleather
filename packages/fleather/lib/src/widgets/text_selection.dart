@@ -1265,10 +1265,12 @@ class _TransparentTapGestureRecognizer extends TapGestureRecognizer {
     // behalf of the text field in order to handle double tap to select. It must
     // not accept other gestures like longpresses and drags that end outside of
     // the text field.
-    if (state == GestureRecognizerState.ready) {
-      acceptGesture(pointer);
-    } else {
-      super.rejectGesture(pointer);
-    }
+
+    // TODO: this is disabled so that we can handle taps on images and files.
+    // if (state == GestureRecognizerState.ready) {
+    //   acceptGesture(pointer);
+    // } else {
+    //   super.rejectGesture(pointer);
+    // }
   }
 }
