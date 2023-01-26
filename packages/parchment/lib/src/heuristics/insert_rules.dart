@@ -145,9 +145,6 @@ class ResetLineFormatOnNewLineRule extends InsertRule {
           ..insert('\n', target.attributes)
           ..retain(1, resetStyle)
           ..trim();
-      } else {
-        // Nothing needs to be reset
-        return null;
       }
     }
     return null;

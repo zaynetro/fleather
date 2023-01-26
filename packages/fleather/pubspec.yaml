@@ -19,7 +19,6 @@ dependencies:
       url: https://github.com/zaynetro/fleather.git
       ref: bolik-app
       path: packages/parchment
-  characters: ^1.2.0
 
 dev_dependencies:
   flutter_test:
